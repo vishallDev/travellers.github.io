@@ -261,7 +261,9 @@ no-repeat;
   
 }
 .videos{
-  
+  Display:flex;
+Flex-wrap:wrap;
+Overflow:auto;
 
   background: linear-gradient(to right, #3c3b3f, #605c3c);
  
