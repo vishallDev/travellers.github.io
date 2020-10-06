@@ -428,18 +428,19 @@ outline-style: none;
 
 .contactus{
   display: flex;
-  padding: 35px;
+  padding: 25px;
   margin: 15px;
+Overflow:auto;
 }
 .contactus p{
   /* display: flex; */
   /* padding: 5px; */
-  color: white;
+  color: black;
   overflow: auto;
   font-family: cursive;
   font-size: 20px;
   letter-spacing: 1px;
-  margin: 20px;
+  margin: 15px;
 }
 
 #cont{
