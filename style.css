@@ -261,11 +261,10 @@ no-repeat;
   
 }
 .videos{
-  /* display: flex; */
   
 
   background: linear-gradient(to right, #3c3b3f, #605c3c);
-  /* opacity: 0.5; */
+ 
 }
 .information{
   display: flex;
@@ -485,11 +484,13 @@ font-size: 20px;
   align-items: center;
   padding: 5px;
   margin: 5px;
+Overflow:auto;
 }
 .contactus p{
   font-size: 8px;
   letter-spacing: 1px;
   margin: 4px;
+Color:black;
 }
 #cont{
   width: 120px;
