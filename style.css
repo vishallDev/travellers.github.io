@@ -1,0 +1,497 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior:  smooth;
+}
+
+nav {
+  /* display: flex; */
+  /* background: linear-gradient(to left, #c31432, #240b36); */
+  background: linear-gradient(to right, #00416a, #e4e5e6);
+  /* margin: 10px; */
+  transition: all 0.2s ease;
+
+}
+
+nav:hover{
+ padding: 11px; 
+
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  list-style: none;
+  flex-wrap: wrap;
+}
+nav ul li a{
+  text-decoration: none;
+  /* list-style: none; */
+  color: black;
+}
+nav ul li {
+  margin: 10px 6px 6px 6px;
+  padding: 4px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  transition: all 0.2s ease;
+  opacity: 0.8;
+  
+  cursor: pointer;
+}
+nav ul li:hover,a:hover {
+  margin-left: 25px;
+  margin-right: 25px;
+  transform: scale(1.6);
+  text-shadow: 0px 0px 2px white;
+  letter-spacing: 1px;
+opacity: 1;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.parent {
+  height: max-content;
+  /* border: 2  0px solid rgb(0, 0, 0); */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch; /* TODO if we have to use stretch dont give an height*/
+  align-items: center;
+  flex-wrap: wrap;
+  flex-flow: row wrap;
+  overflow: auto;
+  margin: 30px 10px 10px 10px;
+
+  border-radius: 15px;
+  /* background: linear-gradient(to left, #004e92, #000428);  */
+}
+.child1 {
+  /* display: flex; */
+  width: 200px;
+  height: 200px;
+  
+  order: 0;
+  /* flex-grow: 1; */
+  /* flex-basis: 400px; */
+  flex: 1 1 300px;
+  /* justify-content: center; */
+  /* align-items: center; */
+  text-align: center;
+  color: black;
+  margin: 5px;
+  overflow: hidden;
+}
+h1 {
+  padding: 10px;
+}
+p {
+  padding: 10px;
+}
+.child2 {
+  width: 200px;
+  height: 200px;
+  
+  order: 1;
+  text-align: center;
+  flex: 1 1 300px;
+  margin: 5px;
+  overflow: hidden;
+}
+.child3 {
+  width: 200px;
+  height: 200px;
+  
+  order: 2;
+  flex: 1 1 300px;
+  text-align: center;
+  /* color: white; */
+  margin: 5px;
+  overflow: hidden;
+}
+.child4 {
+  width: 200px;
+  height: 200px;
+  
+  order: 3;
+  flex: 1 1 300px;
+  text-align: center;
+  margin: 5px;
+  overflow: hidden;
+}
+.child5 {
+  width: 200px;
+  height: 200px;
+  
+  order: 4;
+  flex: 1 1 300px;
+  text-align: center;
+  margin: 5px;
+  /* color: white; */
+
+  overflow: hidden;
+}
+.child6 {
+  width: 200px;
+  height: 200px;
+  
+  order: 5;
+  flex: 1 1 300px;
+  text-align: center;
+  margin: 5px;
+  overflow: hidden;
+}
+.child7 {
+  width: 200px;
+  height: 200px;
+  
+  order: 6;
+  flex: 1 1 300px;
+  text-align: center;
+  margin: 5px;
+  /* color: white; */
+
+  overflow: hidden;
+}
+.child8 {
+  width: 200px;
+  height: 200px;
+
+  order: 7;
+  flex: 1 1 300px;
+  text-align: center;
+  margin: 5px;
+  overflow: hidden;
+}
+.extra {
+  border-radius: 20px;
+  transition: all 0.4s ease-in-out  ;
+  animation: brod 10s ease-in-out forwards infinite;
+  /* background: red; */
+  
+}
+
+@keyframes brod{
+
+0%{
+border: 3px solid #ec38bc;
+
+}
+20%{
+  
+border: 3px solid #7a2463;
+  
+  
+  
+}
+40%{
+  
+border: 3px solid #4e2242;
+  
+  
+  
+}
+80%{
+  
+border: 3px solid #e96bc7;
+  
+  
+  
+
+}
+100%{
+border: 3px solid #000000;
+  
+}
+
+
+}
+.extra:hover{
+  transform: scale(1.0001);
+  /* border: 0.5px solid black; */
+  color: rgb(121, 31, 121);
+}
+.extra::after{
+  content: "";
+  background: url(./dane-deaner-S3eqr293Vho-unsplash.jpg);
+  z-index: -1 000  ;
+}
+
+
+.sectionimg {
+  height: 100vh;
+  /* background: url(./dino-reichmuth-A5rCN8626Ck-unsplash.jpg) center center/COVER */
+    no-repeat;
+  /* opacity:0.8; */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  overflow: auto;
+  transition: all 0.4s ease-in-out;
+  animation: all 16s  infinite ease-in-out alternate-reverse;
+}
+@keyframes all{
+00%{
+background: url(./dane-deaner-S3eqr293Vho-unsplash.jpg)center center/COVER
+no-repeat;
+}
+30%{
+background: url(./dino-reichmuth-A5rCN8626Ck-unsplash.jpg)center center/COVER
+no-repeat;
+}
+60%{
+background: url(./john-towner-JgOeRuGD_Y4-unsplash.jpg)center center/COVER
+no-repeat;
+}
+100%{
+background: url(./priscilla-du-preez-EFoH8YajQuA-unsplash.jpg)center center/COVER
+no-repeat;
+}
+
+}
+
+.sectionimg:hover{
+  /* height: 70vh; */
+  transform:scale(0.99);
+  border-radius: 5px;
+  
+}
+.videos{
+  /* display: flex; */
+  
+
+  background: linear-gradient(to right, #3c3b3f, #605c3c);
+  /* opacity: 0.5; */
+}
+.information{
+  display: flex;
+  height: 100vh;
+  /* align-items: center; */
+  justify-content:  center;
+  flex-wrap: wrap;
+  overflow: auto;
+}
+            .information h1{
+              font-family: cursive;
+              font-size: 25px;
+              margin-top: 4px auto;
+              color: white;
+              letter-spacing: 1.01px;
+              text-transform: uppercase;
+              /* padding: 5px; */
+
+            }
+.information p{
+  color: white;
+  padding-left: 40px;
+  padding-right: 40px;
+  text-align: center;
+  /* margin: 10px; */
+  letter-spacing: 1px;
+  font-family: cursive;
+  font-size: 19px;
+}
+iframe{
+  width: 90%; 
+height: max-content;
+
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 25px;
+}
+.content p {
+  font-size: 19px;
+  text-align: center;
+  color: white;
+  background-color: teal;
+}
+.content h1 {
+  font-size: 39px;
+  margin: 25px;
+  background-color: #004e92;
+  border-radius: 15px;
+  color: wheat;
+  /* text-align: center; */
+}
+.sectionimg2 {
+  height: 100vh;
+  background: url(./john-towner-JgOeRuGD_Y4-unsplash.jpg) center
+    center/COVER no-repeat;
+  /* opacity:0.8; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow: auto;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  /* text-align: center; */
+}
+input,
+label {
+  text-align: center;
+  /* margin: 4px; */
+  padding: 5px;
+  color: red;
+  font-size: 20px;
+  outline-style: none;
+}
+footer{
+  width: 100%;
+  background: linear-gradient(to left, #c0c0aa13, #1cf0ff00);
+  text-align:center;
+
+  
+}
+h3{
+  color :white;
+  font-size: 24px;
+}
+h4{
+  padding-top: 15px;
+  color: purple;
+  font-family: cursive;
+  font-size: 16px;
+}
+#btn{
+  background-color: transparent;
+  outline: none;
+  border: 1.2px solid #004e92;
+  margin: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 50%;
+  font-family: cursive;
+  letter-spacing: 1.20px;
+  font-weight: bolder;
+  color: rgb(255, 255, 255);
+
+}
+#btn:hover{
+
+background: linear-gradient(to right, #03001e, #7303c0, #ec38bc, #fdeff9);
+box-shadow: 0px 0px   5px 1px #1CB5E0;
+color: rgb(0, 0, 0);
+}
+.img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow: auto;
+  /* flex-flow: column; */
+
+}
+img{
+  padding: 5px;
+  width: 40px;
+  transition: all 0.2s ease-in-out;
+
+}
+img:hover{
+
+  transform: translateY(-3px);
+  cursor: pointer;
+  filter: drop-shadow(0px 5px 4px red)
+}
+iframe{
+border: 2px solid red;
+outline-style: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contactus{
+  display: flex;
+  padding: 35px;
+  margin: 15px;
+}
+.contactus p{
+  /* display: flex; */
+  /* padding: 5px; */
+  color: white;
+  overflow: auto;
+  font-family: cursive;
+  font-size: 20px;
+  letter-spacing: 1px;
+  margin: 20px;
+}
+
+#cont{
+  width: 200px;
+  height: 200px;
+}
+
+
+
+
+
+ @media only screen and (max-width:350px){
+  nav{
+    background: linear-gradient(-45deg, #065f96, #e4e5e6);
+  }
+nav ul {
+  flex-direction: column;
+  overflow: hidden;
+}
+.content h1{
+font-size: 20px;
+}
+.content p{
+  font-size: 14px;
+}
+
+.information h1{
+  font-size: 15px;
+
+}
+.information p{
+  font-size: 10px;
+  padding-left: 8px;
+  padding-right: 8px;
+  
+}
+.contactus{
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  margin: 5px;
+}
+.contactus p{
+  font-size: 8px;
+  letter-spacing: 1px;
+  margin: 4px;
+}
+#cont{
+  width: 120px;
+  height: 120px;
+}
+ }
